@@ -13,4 +13,4 @@ jobs:
         with:
           node-version: 8
       - run: npm install -g surge
-      - run: surge ./ ${{ secrets.SIGNUPFORFACEBOOK }} --token ${{ secrets.signupforfacebook_Domain }}
+      - run: surge ./ ${{ secrets.SIGNUP_DOMAIN }} --token ${{ secrets.SIGNUP_TOKEN }}
